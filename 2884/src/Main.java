@@ -15,6 +15,7 @@ public class Main {
         H = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
 
+        /*
         // 시간 계산, 경계값인 00:00 시에 대한 조건문 포함
         M -= 45;
         if (M < 0) {
@@ -25,5 +26,7 @@ public class Main {
             }
         }
         System.out.println(H + " " + M);
+        */
+        System.out.println((M < 45 )? (H+23)%24+" "+(M+15) : H+" "+ (M-45));
     }
 }
